@@ -10,14 +10,14 @@ class OthelloPositionTest {
 
     OthelloPosition othelloBoard;
     String board =
-                "EEEEEEEE" +
+                "WEEEEEEEE" +
                 "EEEEBEEE"+
                 "EEEOBBEE"+
                 "EEEOBEEE"+
                 "EEEOOOEE"+
                 "EEEEEEEE"+
                 "EEEEEEEE"+
-                "EEEEEEEEE";
+                "EEEEEEEE";
 
     @Before
     void setUp() {

@@ -16,7 +16,7 @@ public class HeuristicEvaluator implements OthelloEvaluator {
         }
 
         if(!position.toMove())
-            maxValue *= -1;
+            return maxValue * -1;
 
         return maxValue;
     }

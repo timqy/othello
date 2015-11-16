@@ -85,8 +85,8 @@ public class OthelloPosition {
 	public LinkedList<OthelloAction> getMoves() {
 		LinkedList<OthelloAction> moves = new LinkedList<>();
 
-		for(int row = 0; IsWithinBoard(row);row++){
-			for(int column = 0; IsWithinBoard(column);column++){
+		for(int row = 1; IsWithinBoard(row);row++){
+			for(int column = 1; IsWithinBoard(column);column++){
 				if(board[row][column] == 'E'){
 					int value = 0;
 					/** check all 8 directions */
