@@ -32,12 +32,13 @@ class AlphaBetaTest extends GroovyTestCase {
 
     @Test
     void testEvaluate() {
+        algorithm.setSearchDepth(0);
+        assertEquals(3,algorithm.evaluate(othelloBoard).getValue());
 
-        for(int i = 1; i < 2; i++){
-            algorithm.setSearchDepth(i);
-            printf("value : " + algorithm.evaluate(othelloBoard).getValue());
 
-        }
+        algorithm.setSearchDepth(5);
+        printf("value : " + algorithm.evaluate(othelloBoard).getValue());
+
 
     }
 }

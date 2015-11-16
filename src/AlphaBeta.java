@@ -20,7 +20,7 @@ public class AlphaBeta implements OthelloAlgorithm {
 
         try {
             for(OthelloAction action : position.getMoves()) {
-                int alphabetaValue = alphaBetaSearch(position.makeMove(action), 0, 0);
+                int alphabetaValue = alphaBetaSearch(position.makeMove(action), 0, action.getValue());
                 System.out.println("alphabeta value : " + alphabetaValue);
                 if (bestValue < alphabetaValue) {
                     bestAction = action;
@@ -40,7 +40,7 @@ public class AlphaBeta implements OthelloAlgorithm {
         int bestValue = evaluator.evaluate(position);
         for(OthelloAction action : position.getMoves()){
             if(Math.abs(bestValue) == action.getValue()){
-                value += alphaBetaSearch(position.makeMove(action),depth++,bestValue);
+                value += alphaBetaSearch(position.makeMove(action),depth + 1,bestValue);
             }
 
         }
