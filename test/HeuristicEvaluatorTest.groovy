@@ -28,6 +28,7 @@ class HeuristicEvaluatorTest extends GroovyTestCase {
 
     @Test
     void testEvaluate() {
-        assertEquals(3,evaluator.evaluate(othelloBoard));
+        othelloBoard.illustrate();
+        println("Evaluation of board : " + evaluator.evaluate(othelloBoard));
     }
 }

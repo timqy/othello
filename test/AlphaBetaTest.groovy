@@ -24,10 +24,9 @@ class AlphaBetaTest extends GroovyTestCase {
     void setUp() {
 
         othelloBoard = new OthelloPosition(board);
-        algorithm = new AlphaBeta();
+        algorithm = new AlphaBeta(1);
         evaluator = new HeuristicEvaluator();
         algorithm.setEvaluator(evaluator);
-        algorithm.setSearchDepth(1);
     }
 
     @Test

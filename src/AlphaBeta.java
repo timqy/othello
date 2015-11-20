@@ -6,6 +6,10 @@ public class AlphaBeta implements OthelloAlgorithm {
     private OthelloEvaluator evaluator;
     private int maxDepth;
 
+    public AlphaBeta(int maxDepth) {
+        this.maxDepth = maxDepth;
+    }
+
     @Override
     public void setEvaluator(OthelloEvaluator evaluator) {
         this.evaluator = evaluator;
@@ -15,20 +19,29 @@ public class AlphaBeta implements OthelloAlgorithm {
     public OthelloAction evaluate(OthelloPosition position) {
         OthelloAction bestAction = null;
         int maxValue = Integer.MIN_VALUE;
+        int actionValue = 0;
 
-        try {
-            for(OthelloAction action : position.getMoves()) {
-                int alphabetaValue = alphaBetaSearch(position.makeMove(action), 0,Integer.MIN_VALUE,Integer.MAX_VALUE);
-                System.out.println("Action (" +action.getRow()+ "," + action.getColumn() + ") " + alphabetaValue);
-                if (maxValue < alphabetaValue) {
-                    bestAction = action;
-                    maxValue = alphabetaValue;
-                }
-            }
-        } catch (IllegalMoveException e) {
+        for(OthelloAction action : position.getMoves()) {
+
+            try {
+                actionValue = alphaBetaSearch(position.makeMove(action), 0,Integer.MIN_VALUE,Integer.MAX_VALUE);
+            } catch (IllegalMoveException e) {
+                /** Continue */
                 e.printStackTrace();
             }
-        return bestAction;
+
+            if (maxValue < actionValue) {
+                bestAction = action;
+                maxValue = actionValue;
+            }
+        }
+
+        /** Move */
+        if(bestAction != null)
+            return bestAction;
+
+        /** Pass */
+        return new OthelloAction(1,1,true);
     }
 
     private int alphaBetaSearch(OthelloPosition position,int depth,int alpha,int beta) throws IllegalMoveException {
@@ -66,37 +79,6 @@ public class AlphaBeta implements OthelloAlgorithm {
         }
         return value;
     }
-
-    /**
-    private int MaxValue(OthelloPosition position,int depth,int alpha,int beta) throws IllegalMoveException {
-        if(depth >= maxDepth)
-            return alpha;
-
-        int value = Integer.MIN_VALUE;
-        for(OthelloAction action : position.getMoves()){
-            value = Math.max(value,MinValue(position.makeMove(action),depth++,alpha,beta));
-            if(value >= beta)
-                return value;
-
-            alpha = Math.max(alpha,value);
-        }
-        return value;
-    }
-
-    private int MinValue(OthelloPosition position,int depth, int alpha,int beta) throws IllegalMoveException {
-        if(depth >= maxDepth)
-            return beta;
-
-        int value = Integer.MAX_VALUE;
-        for(OthelloAction action : position.getMoves()){
-            value = Math.min(value,MaxValue(position.makeMove(action),depth++,alpha,beta));
-            if(value <= alpha)
-                return value;
-            beta = Math.min(beta,value);
-        }
-        return value;
-    }
-    */
 
     @Override
     public void setSearchDepth(int depth) {

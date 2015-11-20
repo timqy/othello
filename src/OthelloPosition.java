@@ -74,8 +74,6 @@ public class OthelloPosition {
 		playerToMove = true;
 	}
 
-	/* getMoves and helper functions */
-
 	/**
 	 * Returns a linked list of <code>OthelloAction</code> representing all
 	 * possible moves in the position. If the list is empty, there are no legal
@@ -107,14 +105,10 @@ public class OthelloPosition {
 
 	}
 
-	/* toMove */
-
 	/** Returns true if the first player (white) has the move, otherwise false. */
 	public boolean toMove() {
 		return playerToMove;
 	}
-
-	/* makeMove and helper functions */
 
 	/**
 	 * Returns the position resulting from making the move <code>action</code>
@@ -188,7 +182,6 @@ public class OthelloPosition {
 	 * @param incColumn increment of Column
 	 */
 	public void CapturePiecesInDirection(int row, int column, int incRow, int incColumn) {
-
 		if(EvaluateDirectionValue(row, column, incRow, incColumn) == 0)
 			return;
 
