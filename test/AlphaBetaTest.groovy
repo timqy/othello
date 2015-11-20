@@ -12,9 +12,9 @@ class AlphaBetaTest extends GroovyTestCase {
 
     String board =  "W"+
             "EEEEEEEE" +
-            "EEEEBEEE"+
-            "EEEOBBEE"+
-            "EEEOBEEE"+
+            "EEEEWEEE"+
+            "EEEOWWEE"+
+            "EEEOWEEE"+
             "EEEOOOEE"+
             "EEEEEEEE"+
             "EEEEEEEE"+
@@ -33,12 +33,16 @@ class AlphaBetaTest extends GroovyTestCase {
     @Test
     void testEvaluate() {
         algorithm.setSearchDepth(0);
-        assertEquals(3,algorithm.evaluate(othelloBoard).getValue());
+        othelloBoard.illustrate();
 
+        OthelloAction actionToMake = algorithm.evaluate(othelloBoard);
+        println("actionToMake value : " + actionToMake.getValue());
+        othelloBoard.makeMove(actionToMake).illustrate();
 
         algorithm.setSearchDepth(5);
-        printf("value : " + algorithm.evaluate(othelloBoard).getValue());
-
+        actionToMake = algorithm.evaluate(othelloBoard);
+        println("actionToMake value : " + actionToMake.getValue());
+        othelloBoard.makeMove(actionToMake).illustrate();
 
     }
 }

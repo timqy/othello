@@ -31,5 +31,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="org.codehaus.groovy:groovy:1.8.3" level="project" />
+    <orderEntry type="library" name="groovy-1.8.6" level="application" />
   </component>
 </module>

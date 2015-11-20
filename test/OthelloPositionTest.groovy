@@ -11,9 +11,9 @@ class OthelloPositionTest {
     OthelloPosition othelloBoard;
     String board =
                 "WEEEEEEEE" +
-                "EEEEBEEE"+
-                "EEEOBBEE"+
-                "EEEOBEEE"+
+                "EEEEWEEE"+
+                "EEEOWWEE"+
+                "EEEOWEEE"+
                 "EEEOOOEE"+
                 "EEEEEEEE"+
                 "EEEEEEEE"+

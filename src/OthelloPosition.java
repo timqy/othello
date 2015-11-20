@@ -82,8 +82,8 @@ public class OthelloPosition {
 	 * moves for the player who has the move.
 	 */
 
-	public LinkedList<OthelloAction> getMoves() {
-		LinkedList<OthelloAction> moves = new LinkedList<>();
+	public List<OthelloAction> getMoves() {
+		List<OthelloAction> moves = new LinkedList<>();
 
 		for(int row = 1; IsWithinBoard(row);row++){
 			for(int column = 1; IsWithinBoard(column);column++){
@@ -102,9 +102,6 @@ public class OthelloPosition {
 				}
 			}
 		}
-
-		if(moves.isEmpty())
-			moves.add(new OthelloAction("pass"));
 
 		return moves;
 
@@ -215,7 +212,7 @@ public class OthelloPosition {
 	 * @param position the position to evaluate
 	 * @return true if position is within borders else false.
 	 */
-	private boolean IsWithinBoard(int position){
+	public boolean IsWithinBoard(int position){
 		return 0 < position && position <= BOARD_SIZE;
 	}
 

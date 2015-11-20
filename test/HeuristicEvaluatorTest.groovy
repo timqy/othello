@@ -11,9 +11,9 @@ class HeuristicEvaluatorTest extends GroovyTestCase {
 
     String board =  "W"+
                     "EEEEEEEE" +
-                    "EEEEBEEE"+
-                    "EEEOBBEE"+
-                    "EEEOBEEE"+
+                    "EEEEWEEE"+
+                    "EEEOWWEE"+
+                    "EEEOWEEE"+
                     "EEEOOOEE"+
                     "EEEEEEEE"+
                     "EEEEEEEE"+
