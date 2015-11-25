@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="othello:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/othello_jar</output-path>
+    <root id="archive" name="othello.jar">
+      <element id="module-output" name="othello" />
+      <element id="library" level="project" name="org.codehaus.groovy:groovy:1.8.3" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/bsf.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/ant-launcher.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/mockobjects-core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/ant-junit.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/asm3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/asm3-analysis.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/jsp-api.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/antlr.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/regexp.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/ant.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/junit4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/commons-cli.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/jansi.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/xstream.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/servlet-api.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/asm3-util.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/groovy-1.8.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/ivy.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/jline.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/asm3-tree.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/groovy/lib/commons-logging.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

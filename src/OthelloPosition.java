@@ -125,7 +125,7 @@ public class OthelloPosition {
 		OthelloPosition boardAfterMove = clone();
 
 		/** insert move */
-		boardAfterMove.board[action.getRow()][action.getColumn()] = CurrentPlayerColor();
+		boardAfterMove.board[action.getRow()][action.getColumn()] = PlayerColor(playerToMove);
 
 		/** Check all 8 directions at the action for pieces to flip */
 		/**Check diagonally, Horizontally and Vertically*/
@@ -159,10 +159,10 @@ public class OthelloPosition {
 			if(board[row][column] == 'E')
 				return 0;
 
-			if(board[row][column] != CurrentPlayerColor())
+			if(board[row][column] == PlayerColor(!playerToMove))
 				PiecesCaptured++;
 
-			if(board[row][column] == CurrentPlayerColor())
+			if(board[row][column] == PlayerColor(playerToMove))
 					return PiecesCaptured;
 
 			row += incRow;
@@ -188,11 +188,11 @@ public class OthelloPosition {
 		row += incRow;
 		column += incColumn;
 
-		while(board[row][column] != 'E' && board[row][column] != CurrentPlayerColor()){
+		while(board[row][column] == PlayerColor(!playerToMove)){
 			if(!IsWithinBoard(row) && !IsWithinBoard(column))
 				return;
 
-			board[row][column] = CurrentPlayerColor();
+			board[row][column] = PlayerColor(playerToMove);
 
 			row += incRow;
 			column += incColumn;
@@ -213,7 +213,7 @@ public class OthelloPosition {
 	 * Gets the color of the marker of the current player
 	 * @return The first letter of the color (W)hite or (B)lack.
 	 */
-	private char CurrentPlayerColor(){
+	public char PlayerColor(boolean playerToMove){
 		/**if player white return W */
 		if(playerToMove)
 			return 'W';

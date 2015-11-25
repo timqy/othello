@@ -19,20 +19,20 @@ public class AlphaBeta implements OthelloAlgorithm {
     public OthelloAction evaluate(OthelloPosition position) {
         OthelloAction bestAction = null;
         int maxValue = Integer.MIN_VALUE;
-        int actionValue = 0;
+
 
         for(OthelloAction action : position.getMoves()) {
 
             try {
-                actionValue = alphaBetaSearch(position.makeMove(action), 0,Integer.MIN_VALUE,Integer.MAX_VALUE);
+                action.setValue(alphaBetaSearch(position.makeMove(action), 0, Integer.MIN_VALUE, Integer.MAX_VALUE));
             } catch (IllegalMoveException e) {
                 /** Continue */
                 e.printStackTrace();
             }
 
-            if (maxValue < actionValue) {
+            if (maxValue < action.getValue()) {
                 bestAction = action;
-                maxValue = actionValue;
+                maxValue = action.getValue();
             }
         }
 
@@ -62,8 +62,6 @@ public class AlphaBeta implements OthelloAlgorithm {
                 if(alpha >= beta)
                     break;
             }
-
-
         } else {
             /** Min Player */
             value = Integer.MAX_VALUE;

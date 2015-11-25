@@ -42,6 +42,7 @@ class AlphaBetaTest extends GroovyTestCase {
         actionToMake = algorithm.evaluate(othelloBoard);
         println("actionToMake value : " + actionToMake.getValue());
         othelloBoard.makeMove(actionToMake).illustrate();
+        actionToMake.print();
 
     }
 }

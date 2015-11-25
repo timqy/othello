@@ -6,7 +6,7 @@
 
 # Change directory to the location of your java program (src folder in this case)
 # $(dirname "$0") is the path to where this script is
-cd "$(dirname "$0")/out/artifacts/Othello_jar"
+cd "$(dirname "$0")/out/artifacts/NaiveOthello_jar"
 
 # Call your Java program:
 #java othello $1 $2
