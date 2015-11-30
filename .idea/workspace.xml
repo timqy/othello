@@ -9,7 +9,6 @@
     <list default="true" id="e1be075a-32ce-4f9f-afaf-7b73432881d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Othello_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Othello_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/othello.iml" afterPath="$PROJECT_DIR$/othello.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="othello.iws" />
@@ -38,8 +37,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/OthelloPosition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="64" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
-              <folding />
+              <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +85,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7589286">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49741825">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -939,7 +940,7 @@
       <workItem from="1447678251154" duration="20000" />
       <workItem from="1447678574402" duration="1225000" />
       <workItem from="1448904751521" duration="3650000" />
-      <workItem from="1448908861827" duration="1230000" />
+      <workItem from="1448908861827" duration="1876000" />
     </task>
     <task id="LOCAL-00001" summary="so">
       <created>1447632026990</created>
@@ -1007,7 +1008,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448908818069</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added maven">
+      <created>1448910739889</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1448910739889</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1043,7 +1050,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26403000" />
+    <option name="totallyTimeSpent" value="27049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1051,12 +1058,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13020833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3498943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3498943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1220,7 +1227,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1228,6 +1237,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,7 +1288,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,6 +1298,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1349,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1344,6 +1359,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,6 +1438,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.531599">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,6 +1475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1479,13 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OthelloPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="64" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -1571,10 +1582,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OthelloPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7589286">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.49741825">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
         </state>
       </provider>
