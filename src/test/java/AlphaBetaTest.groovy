@@ -4,7 +4,7 @@ import org.junit.Test
 /**
  * Tests the alpha beta search
  */
-class AlphaBetaTest extends GroovyTestCase {
+class AlphaBetaTest {
 
     OthelloPosition othelloBoard;
     OthelloAlgorithm algorithm;

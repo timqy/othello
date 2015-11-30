@@ -4,7 +4,7 @@ import org.junit.Test
 /**
  * Heuristic evaluator test.
  */
-class HeuristicEvaluatorTest extends GroovyTestCase {
+class HeuristicEvaluatorTest {
 
     OthelloPosition othelloBoard;
     OthelloEvaluator evaluator;
