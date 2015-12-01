@@ -2,9 +2,6 @@
  * Main class
  */
 public class Othello {
-
-
-
     public static void main(String[] args) {
         if(args.length != 2){
             System.err.println("Othello runs on two arguments");
