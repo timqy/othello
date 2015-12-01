@@ -7,7 +7,7 @@ public class AlphaBeta implements OthelloAlgorithm {
 
     private OthelloEvaluator evaluator;
     private int maxDepth;
-
+    private int maxCount = 0;
     public AlphaBeta(int maxDepth) {
         this.maxDepth = maxDepth;
     }
@@ -34,12 +34,8 @@ public class AlphaBeta implements OthelloAlgorithm {
                 bestAction = action;
                 maxValue = action.getValue();
             }
-
-
-
         }
-
-        /** Move */
+        System.out.println("MAXCOUNT = " + maxCount);
         if(bestAction != null)
             return bestAction;
 
@@ -49,7 +45,7 @@ public class AlphaBeta implements OthelloAlgorithm {
 
     private int alphaBetaSearch(OthelloPosition position,int depth,int alpha,int beta) throws IllegalMoveException {
         List<OthelloAction> moves;
-
+        maxCount++;
         if(depth == maxDepth || (moves = position.getMoves()).isEmpty()){
             return evaluator.evaluate(position);
         }

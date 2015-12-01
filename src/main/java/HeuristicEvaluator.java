@@ -93,7 +93,6 @@ public class HeuristicEvaluator implements OthelloEvaluator {
 
         if(position.toMove()){
             return coinParityWeight * (whiteCoin/blackCoin);
-
         }
 
         return coinParityWeight * (blackCoin/whiteCoin);
@@ -105,16 +104,14 @@ public class HeuristicEvaluator implements OthelloEvaluator {
      * @return the value from the evaluation.
      */
     public int HasActionInCorner(OthelloPosition position){
-
         for(OthelloAction action : position.getMoves()){
-            int cornerX = 1;
-            int cornerY = OthelloPosition.BOARD_SIZE;
+            int boardLow = 1;
+            int boardHigh = OthelloPosition.BOARD_SIZE;
 
-            if(action.getRow() == cornerX || action.getRow() == cornerY)
-                if(action.getColumn() == cornerX || action.getColumn() == cornerY)
+            if(action.getRow() == boardLow || action.getRow() == boardHigh)
+                if(action.getColumn() == boardLow || action.getColumn() == boardHigh)
                     return actionInCornerWeight;
         }
-
         return 0;
     }
     
@@ -127,7 +124,7 @@ public class HeuristicEvaluator implements OthelloEvaluator {
      */
     public int hasActionsAroundCorner(OthelloPosition position){
         int boardLow = 1;
-        int boardHigh = 8;
+        int boardHigh = OthelloPosition.BOARD_SIZE;
 
         for(OthelloAction action : position.getMoves()) {
             if(action.getRow() == boardLow || action.getRow() == boardLow+1
