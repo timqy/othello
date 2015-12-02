@@ -32,10 +32,7 @@ public class AlphaBeta implements OthelloAlgorithm {
             if (position.toMove() && maxValue < action.getValue()) {
                 bestAction = action;
                 maxValue = action.getValue();
-            } else if (!position.toMove() && maxValue > action.getValue()) {
-                bestAction = action;
-                maxValue = action.getValue();
-            }
+            } 
         }
 
         if(bestAction != null)
