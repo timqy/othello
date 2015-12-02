@@ -29,7 +29,10 @@ public class AlphaBeta implements OthelloAlgorithm {
                 e.printStackTrace();
             }
 
-            if (maxValue < action.getValue()) {
+            if (position.toMove() && maxValue < action.getValue()) {
+                bestAction = action;
+                maxValue = action.getValue();
+            } else if (!position.toMove() && maxValue > action.getValue()) {
                 bestAction = action;
                 maxValue = action.getValue();
             }
