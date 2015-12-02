@@ -2,6 +2,8 @@
  * Main class
  */
 public class Othello {
+
+
     public static void main(String[] args) {
         if(args.length != 2){
             System.err.println("Othello runs on two arguments");
@@ -29,7 +31,17 @@ public class Othello {
      * @return searchDepth
      */
     public static int calculateDepth(float time){
-        return (int)time;
+        if(time < 2)
+            return 3;
+        if(time < 3)
+            return 5;
+        if(time < 30)
+            return 6;
+        if(time < 61)
+            return 7;
+        if(time < 399)
+            return 8;
 
+        return 9;
     }
 }

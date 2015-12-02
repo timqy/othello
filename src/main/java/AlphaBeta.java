@@ -71,7 +71,7 @@ public class AlphaBeta implements OthelloAlgorithm {
                 beta = Math.min(beta,value);
 
                 /** alpha cutoff */
-                if(beta <= alpha)
+                if(alpha >= beta)
                     break;
             }
         }
