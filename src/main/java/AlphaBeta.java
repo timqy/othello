@@ -19,6 +19,8 @@ public class AlphaBeta implements OthelloAlgorithm {
         OthelloAction bestAction = null;
         int maxValue = Integer.MIN_VALUE;
 
+        if(!position.toMove())
+            maxValue = Integer.MAX_VALUE;
 
         for(OthelloAction action : position.getMoves()) {
 
