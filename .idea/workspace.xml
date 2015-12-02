@@ -36,8 +36,8 @@
       <file leaf-file-name="AlphaBeta.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AlphaBeta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36968374">
-              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.51799345">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -1002,7 +1002,7 @@
       <workItem from="1448904751521" duration="3650000" />
       <workItem from="1448908861827" duration="7474000" />
       <workItem from="1448978076198" duration="8479000" />
-      <workItem from="1449048077315" duration="443000" />
+      <workItem from="1449048077315" duration="551000" />
     </task>
     <task id="LOCAL-00001" summary="so">
       <created>1447632026990</created>
@@ -1130,7 +1130,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449048386973</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added maven">
+      <created>1449048522507</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1449048522507</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1166,7 +1172,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41569000" />
+    <option name="totallyTimeSpent" value="41677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1653,8 +1659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AlphaBeta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36968374">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.51799345">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
           <folding />
         </state>
       </provider>
