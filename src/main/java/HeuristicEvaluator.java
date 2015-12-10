@@ -3,11 +3,11 @@
  */
 public class HeuristicEvaluator implements OthelloEvaluator {
 
-    private static int moveabilityWeight = 4;
-    private static int actionInCornerWeight = 10000;
-    private static int actionAroundCornerWeight = -400;
-    private static int coinParityWeight = 5;
-    private static int potentialMovesWeight = 4;
+    public final int moveAbilityWeight = 4;
+    public final int actionInCornerWeight = 3000;
+    public final int actionAroundCornerWeight = -1000;
+    public final int coinParityWeight = 7;
+    public final int potentialMovesWeight = 4;
 
     public int evaluate(OthelloPosition position) {
         int value = 0;
@@ -25,7 +25,7 @@ public class HeuristicEvaluator implements OthelloEvaluator {
     }
 
     public int MovesComparison(OthelloPosition position){
-        return position.getMoves().size() * moveabilityWeight;
+        return position.getMoves().size() * moveAbilityWeight;
     }
 
     /***

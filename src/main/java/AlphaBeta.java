@@ -61,23 +61,25 @@ public class AlphaBeta implements OthelloAlgorithm {
 
             for(OthelloAction action : moves) {
                 value = Math.max(value,alphaBetaSearch(position.makeMove(action),depth+1,alpha,beta));
-                alpha = Math.max(alpha,value);
 
                 /** beta cutoff */
-                if(alpha >= beta)
+                if(value >= beta)
                     break;
+
+                alpha = Math.max(alpha,value);
             }
         } else {
             /** Min Player */
             value = Integer.MAX_VALUE;
 
             for(OthelloAction action : moves) {
-                value = Math.min(value,alphaBetaSearch(position.makeMove(action),depth+1, alpha,beta));
-                beta = Math.min(beta,value);
+                value = Math.min(value, alphaBetaSearch(position.makeMove(action), depth + 1, alpha, beta));
 
                 /** alpha cutoff */
-                if(alpha >= beta)
+                if(value <= alpha)
                     break;
+
+                beta = Math.min(beta, value);
             }
         }
         return value;

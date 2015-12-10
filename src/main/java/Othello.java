@@ -16,10 +16,10 @@ public class Othello {
             System.exit(-1);
         }
 
-        int depth = calculateDepth(Float.parseFloat(args[1]));
+        int depth = calculateDepth(Integer.parseInt(args[1]));
 
         OthelloPosition othelloBoard = new OthelloPosition(args[0]);
-        OthelloAlgorithm alphaBetaSearch = new AlphaBeta(depth);
+        OthelloAlgorithm alphaBetaSearch = new AlphaBeta(Integer.parseInt(args[1]));
         alphaBetaSearch.setEvaluator(new HeuristicEvaluator());
 
         alphaBetaSearch.evaluate(othelloBoard).print();
@@ -30,7 +30,7 @@ public class Othello {
      * @param time the time given
      * @return searchDepth
      */
-    public static int calculateDepth(float time){
+    public static int calculateDepth(int time){
         if(time < 2)
             return 3;
         if(time < 3)
