@@ -81,11 +81,11 @@
       <file leaf-file-name="HeuristicEvaluator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HeuristicEvaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25289255">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.47768596">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding>
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1033,7 +1033,7 @@
       <workItem from="1448978076198" duration="8479000" />
       <workItem from="1449048077315" duration="1448000" />
       <workItem from="1449147876417" duration="607000" />
-      <workItem from="1449759572308" duration="2422000" />
+      <workItem from="1449759572308" duration="2667000" />
     </task>
     <task id="LOCAL-00001" summary="so">
       <created>1447632026990</created>
@@ -1185,7 +1185,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449760219802</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added maven">
+      <created>1449763174169</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1449763174169</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1221,7 +1227,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45603000" />
+    <option name="totallyTimeSpent" value="45848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -1722,11 +1728,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HeuristicEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25289255">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.47768596">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
           </folding>
         </state>
       </provider>

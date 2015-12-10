@@ -15,7 +15,7 @@ public class HeuristicEvaluator implements OthelloEvaluator {
         value += MovesComparison(position);
         value += coinParity(position);
         value += HasActionInCorner(position);
-        value += hasActionsAroundCorner(position);
+        //value += hasActionsAroundCorner(position);
         value += potentialMoves(position);
 
         if(!position.toMove())
