@@ -3,11 +3,11 @@
  */
 public class HeuristicEvaluator implements OthelloEvaluator {
 
-    public final int moveAbilityWeight = 4;
-    public final int actionInCornerWeight = 3000;
-    public final int actionAroundCornerWeight = -1000;
-    public final int coinParityWeight = 7;
-    public final int potentialMovesWeight = 4;
+    public final int moveAbilityWeight = 40;
+    public final int actionInCornerWeight = 10000;
+    public final int actionAroundCornerWeight = -3000;
+    public final int coinParityWeight = 100;
+    public final int potentialMovesWeight = 40;
 
     public int evaluate(OthelloPosition position) {
         int value = 0;
