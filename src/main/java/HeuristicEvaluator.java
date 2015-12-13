@@ -5,7 +5,6 @@ public class HeuristicEvaluator implements OthelloEvaluator {
 
     public final int moveAbilityWeight = 40;
     public final int actionInCornerWeight = 10000;
-    public final int actionAroundCornerWeight = -3000;
     public final int coinParityWeight = 100;
     public final int potentialMovesWeight = 40;
 
@@ -15,7 +14,6 @@ public class HeuristicEvaluator implements OthelloEvaluator {
         value += MovesComparison(position);
         value += coinParity(position);
         value += HasActionInCorner(position);
-        //value += hasActionsAroundCorner(position);
         value += potentialMoves(position);
 
         if(!position.toMove())
@@ -111,32 +109,6 @@ public class HeuristicEvaluator implements OthelloEvaluator {
             if(action.getRow() == boardLow || action.getRow() == boardHigh)
                 if(action.getColumn() == boardLow || action.getColumn() == boardHigh)
                     return actionInCornerWeight;
-        }
-        return 0;
-    }
-    
-    /**
-     *  If an action is oriented around a corner it gives the oponent
-     * the opportunity to place a marker in corner.
-     *
-     * @param position othelloboard
-     * @return the value from the evaluation.
-     */
-    public int hasActionsAroundCorner(OthelloPosition position){
-        int boardLow = 1;
-        int boardHigh = OthelloPosition.BOARD_SIZE;
-
-        for(OthelloAction action : position.getMoves()) {
-            if(action.getRow() == boardLow || action.getRow() == boardLow+1
-               || action.getRow() == boardHigh || action.getRow() == boardHigh -1){
-                if(action.getColumn() == boardLow || action.getColumn() == boardLow+1
-                        || action.getColumn() == boardHigh || action.getColumn() == boardHigh -1){
-                    if((action.getRow() == boardLow ||action.getRow() == boardHigh) &&
-                            action.getColumn() == boardLow || action.getColumn() == boardHigh){
-                        return actionAroundCornerWeight;
-                    }
-                }
-            }
         }
         return 0;
     }
