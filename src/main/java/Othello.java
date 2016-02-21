@@ -19,7 +19,7 @@ public class Othello {
         int depth = calculateDepth(Integer.parseInt(args[1]));
 
         OthelloPosition othelloBoard = new OthelloPosition(args[0]);
-        OthelloAlgorithm alphaBetaSearch = new AlphaBeta(Integer.parseInt(args[1]));
+        OthelloAlgorithm alphaBetaSearch = new AlphaBeta(depth);
         alphaBetaSearch.setEvaluator(new HeuristicEvaluator());
 
         alphaBetaSearch.evaluate(othelloBoard).print();
